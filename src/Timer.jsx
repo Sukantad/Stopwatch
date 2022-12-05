@@ -45,13 +45,13 @@ function Timer() {
         }
     })
     return (
-        <Box>
-            <Box>
-                <Text fontSize={"9xl"}>{min<59?"0"+min:min}:{sec < 10 ? "0" + sec : sec} </Text>
-                <Box w="20%" margin={'auto'} display={'flex'} justifyContent='space-around'> 
-                <Button onClick={start}> Start </Button>
-                <Button onClick={stop}>Stop </Button>
-                <Button onClick={reset}> RESET</Button></Box>
+        <Box h={'100%'} margin={'auto'} display={'flex'} justifyContent='center' alignItems={'center'}>
+            <Box w='50%' h='50%' >
+                <Text color={'white'} fontSize={"9xl"}>{min<59?"0"+min:min}:{sec < 10 ? "0" + sec : sec} </Text>
+                <Box w="40%" margin={'auto'} display={'flex'} justifyContent='space-around'> 
+                <Button bg={'green.400'} onClick={start}> START </Button>
+                <Button bg={'red.500'} onClick={stop}>STOP </Button>
+                <Button bg={'blue.200'} onClick={reset}> RESET</Button></Box>
             </Box>
         </Box >
     );
