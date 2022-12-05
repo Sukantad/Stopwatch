@@ -5,8 +5,9 @@ import { Box } from "@chakra-ui/react";
 function App() {
 
   return (
+    <Box 
     bgGradient='linear(to-r, green.200, pink.500)' 
-        backgroundRepeat={"no-repeat"}
+    backgroundRepeat={"no-repeat"}
     backgroundSize="100%"
     backgroundPosition='bottom 10%  center'
     h='100vh'
